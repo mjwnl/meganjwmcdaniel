@@ -1,0 +1,17 @@
+{
+  "name": "meganjwmcdaniel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Figma plugin build system",
+  "scripts": {
+    "clean:figma": "rm -rf dist",
+    "typecheck:figma": "tsc --noEmit",
+    "build:figma": "node scripts/build-figma.mjs",
+    "watch:figma": "node scripts/build-figma.mjs --watch"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.117.0",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.2"
+  }
+}
